@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "Flutter Marketplace App",
     period: "Oct 2024 – Feb 2025",
     tech: ["Flutter", "GetX", "Clean Architecture"],
-    description: "A modern marketplace with product catalog, cart management, promo codes, and Firebase push notifications. Built with clean architecture for easy maintainability.",
+    description: "A modern marketplace app with product catalog, cart management, promo codes, and Firebase push notifications. Built with clean architecture for easy maintainability.",
     thumbnail: "assets/inwan/thumb.png",
     type: "mobile",
     video: null,
