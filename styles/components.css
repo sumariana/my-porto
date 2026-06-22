@@ -1004,3 +1004,68 @@ article.portfolio .projects-grid {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Contact form ── */
+.input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  background: var(--bg-gradient-jet);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-size: var(--fs-6);
+  outline: none;
+  transition: border-color var(--transition-1);
+}
+
+.form-input::placeholder {
+  color: var(--light-gray-70);
+}
+
+.form-input:focus {
+  border-color: var(--accent);
+}
+
+textarea.form-input {
+  min-height: 120px;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: var(--smoky-black);
+  border-radius: 10px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  transition: opacity var(--transition-1);
+}
+
+.form-btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.form-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-btn ion-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 580px) {
+  .input-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
