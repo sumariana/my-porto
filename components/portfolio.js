@@ -19,6 +19,7 @@ export function renderPortfolio() {
             <p class="project-modal-meta" data-project-modal-meta></p>
             <div class="project-modal-badges" data-project-modal-badges></div>
             <p class="project-modal-desc" data-project-modal-desc></p>
+            <ul class="project-modal-points" data-project-modal-points></ul>
             <div class="project-modal-links" data-project-modal-links></div>
           </div>
         </section>
@@ -38,6 +39,7 @@ export function initPortfolio() {
   const metaEl    = document.querySelector('[data-project-modal-meta]');
   const badgesEl  = document.querySelector('[data-project-modal-badges]');
   const descEl    = document.querySelector('[data-project-modal-desc]');
+  const pointsEl  = document.querySelector('[data-project-modal-points]');
   const linksEl   = document.querySelector('[data-project-modal-links]');
 
   function openProjectModal(id) {
@@ -63,6 +65,10 @@ export function initPortfolio() {
     metaEl.textContent  = `${project.subtitle} · ${project.period}`;
     badgesEl.innerHTML  = project.tech.map(t => `<span class="badge">${t}</span>`).join('');
     descEl.textContent  = project.description;
+
+    const points = project.description_points || [];
+    pointsEl.innerHTML = points.map(p => `<li>${p}</li>`).join('');
+    pointsEl.style.display = points.length ? '' : 'none';
 
     let linksHTML = '';
     if (project.appStoreUrl)  linksHTML += `<a href="${project.appStoreUrl}" target="_blank" class="overlay-btn">App Store ↗</a>`;
