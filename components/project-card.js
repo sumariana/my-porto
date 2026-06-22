@@ -20,7 +20,7 @@ export function renderProjectCard(project) {
   // Build phone frame content — show video element only if video path provided
   const phoneContent = project.video
     ? `
-        <img  src="${project.thumbnail}" alt="${project.title}" class="phone-media" id="thumb-${project.id}">
+        <img src="${project.thumbnail}" alt="${project.title}" class="phone-media" id="thumb-${project.id}">
         <video src="${project.video}" class="phone-media" id="video-${project.id}"
                muted loop playsinline style="display:none"></video>
       `
@@ -47,33 +47,28 @@ export function initProjectCards() {
   document.querySelectorAll('.project-card').forEach(card => {
     const id = card.dataset.id;
     const hasVideo = card.dataset.hasVideo === 'true';
+    const thumb = hasVideo ? document.getElementById(`thumb-${id}`) : null;
+    const video = hasVideo ? document.getElementById(`video-${id}`) : null;
 
-    // Lift card on hover
     card.addEventListener('mouseenter', () => {
       card.style.transform = 'translateY(-4px)';
       card.style.background = 'var(--bg-card-hover)';
+      if (hasVideo) {
+        thumb.style.display = 'none';
+        video.style.display = 'block';
+        video.play().catch(() => {});
+      }
     });
+
     card.addEventListener('mouseleave', () => {
       card.style.transform = 'translateY(0)';
       card.style.background = 'var(--bg-card)';
-    });
-
-    // Swap thumbnail → video on hover (only if video exists)
-    if (hasVideo) {
-      const thumb = document.getElementById(`thumb-${id}`);
-      const video = document.getElementById(`video-${id}`);
-
-      card.addEventListener('mouseenter', () => {
-        thumb.style.display = 'none';
-        video.style.display = 'block';
-        video.play();
-      });
-      card.addEventListener('mouseleave', () => {
+      if (hasVideo) {
         video.pause();
         video.currentTime = 0;
         video.style.display = 'none';
         thumb.style.display = 'block';
-      });
-    }
+      }
+    });
   });
 }
