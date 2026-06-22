@@ -100,7 +100,7 @@ export function renderAbout() {
           <div class="modal-content">
             <h4 class="modal-title" data-modal-title></h4>
             <p class="modal-role" data-modal-role></p>
-            <time data-modal-date></time>
+            <time></time>
             <div data-modal-text></div>
           </div>
         </section>
@@ -119,7 +119,6 @@ export function initAbout() {
   const modalTitle = document.querySelector('[data-modal-title]');
   const modalRole = document.querySelector('[data-modal-role]');
   const modalText = document.querySelector('[data-modal-text]');
-  const modalDate = document.querySelector('[data-modal-date]');
 
   function toggleModal() {
     modal.classList.toggle('active');
