@@ -27,9 +27,9 @@ const skills = [
   { name: 'Flutter',                    level: 95 },
   { name: 'React Native',               level: 95 },
   { name: 'Kotlin / Swift',             level: 80 },
-  { name: 'TypeScript / JavaScript',    level: 80 },
+  { name: 'TypeScript / JavaScript',    level: 90 },
   { name: 'Firebase',                   level: 90 },
-  { name: 'BLE / WebSocket / IoT',      level: 85 },
+  { name: 'BLE / WebSocket / IoT',      level: 80 },
   { name: 'Git & CI/CD',                level: 75 },
 ];
 

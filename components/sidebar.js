@@ -47,7 +47,7 @@ export function renderSidebar() {
             </div>
             <div class="contact-info">
               <p class="contact-label">Location</p>
-              <address>Denpasar, Bali, Indonesia</address>
+              <address>Tabanan, Bali, Indonesia</address>
             </div>
           </li>
         </ul>
