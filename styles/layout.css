@@ -1,57 +1,98 @@
-main {
+/* ── Page shell ── */
+body {
+  min-height: 100vh;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 1.5rem;
+  min-height: 100vh;
 }
 
-section {
-  padding: 5rem 0;
+/* ── Sidebar ── */
+.sidebar {
+  position: sticky;
+  top: 1.5rem;
+  height: fit-content;
+  background: var(--bg-gradient-jet);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-2);
+  padding: 1.5rem;
 }
 
-.section-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 2.5rem;
+/* ── Main content panel ── */
+.main-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ── Nav tabs bar ── */
+.navbar {
+  background: var(--bg-gradient-jet);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-2);
+  padding: 0.75rem 1.25rem;
+}
+
+/* ── Article panels ── */
+article {
+  background: var(--bg-gradient-jet);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-2);
+  padding: 2rem;
+  display: none; /* hidden by default */
+}
+
+article.active {
+  display: block;
+}
+
+.article-title {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
   color: var(--text-primary);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
 }
 
-footer {
-  text-align: center;
-  padding: 2rem 1.5rem;
-  color: var(--text-secondary);
-  border-top: 1px solid var(--border);
-  font-size: 0.875rem;
+/* ── Section headings inside articles ── */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: var(--fw-600);
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
 }
 
-footer a:hover {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .navbar {
-    padding: 0.75rem 1rem;
-  }
-
-  .navbar-links {
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 240px 1fr;
     gap: 1rem;
   }
+}
 
-  .hero-name {
-    font-size: 1.75rem;
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
-  section {
-    padding: 3rem 0;
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  article {
+    padding: 1.5rem;
   }
 }
