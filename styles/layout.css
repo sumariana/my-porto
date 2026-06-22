@@ -23,10 +23,6 @@ footer {
   font-size: 0.875rem;
 }
 
-footer a {
-  color: var(--text-secondary);
-}
-
 footer a:hover {
   color: var(--accent);
   text-decoration: none;
