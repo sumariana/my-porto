@@ -32,6 +32,9 @@
   --badge-border:  hsla(45, 100%, 72%, 0.15);
   --btn-text:      hsl(0, 0%, 7%);
   --bg-navbar:     hsla(0, 0%, 7%, 0.9);
+  --phone-border:  var(--jet);
+  --phone-bg:      var(--smoky-black);
+  --phone-inset:   var(--eerie-black-1);
 
   /* Typography */
   --ff-poppins: 'Poppins', sans-serif;

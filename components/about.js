@@ -100,7 +100,6 @@ export function renderAbout() {
           <div class="modal-content">
             <h4 class="modal-title" data-modal-title></h4>
             <p class="modal-role" data-modal-role></p>
-            <time></time>
             <div data-modal-text></div>
           </div>
         </section>
