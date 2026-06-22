@@ -741,3 +741,152 @@ footer a:hover {
   color: var(--light-gray);
   line-height: 1.75;
 }
+
+/* ── Timeline ── */
+.timeline {
+  margin-bottom: 2rem;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.title-wrapper .icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--bg-gradient-jet);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-1);
+  flex-shrink: 0;
+}
+
+.title-wrapper .icon-box ion-icon {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.timeline-section-title {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  color: var(--text-primary);
+}
+
+.timeline-list {
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.4rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px hsla(45, 100%, 72%, 0.2);
+}
+
+.timeline-item-title {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-degree,
+.timeline-company {
+  font-size: var(--fs-7);
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-period {
+  font-size: var(--fs-8);
+  color: var(--vegas-gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-text {
+  font-size: var(--fs-7);
+  color: var(--light-gray);
+  line-height: 1.6;
+}
+
+.timeline-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timeline-points li {
+  font-size: var(--fs-7);
+  color: var(--light-gray);
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline-points li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ── Skill bars ── */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills-item .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.375rem;
+}
+
+.skill-name {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  color: var(--text-primary);
+}
+
+.skills-item data {
+  font-size: var(--fs-8);
+  color: var(--light-gray-70);
+}
+
+.skill-progress-bg {
+  height: 6px;
+  background: var(--jet);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
