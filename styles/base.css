@@ -1,0 +1,38 @@
+/* Change any color here to retheme the entire site */
+:root {
+  --bg-primary:     #0f0f0f;
+  --bg-card:        #1a1a2a;
+  --bg-card-hover:  #1f1f35;
+  --accent:         #00d4ff;
+  --accent-dim:     rgba(0, 212, 255, 0.1);
+  --text-primary:   #e8e8f0;
+  --text-secondary: #a0a0b8;
+  --border:         #2a2a3e;
+  --font:           'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
