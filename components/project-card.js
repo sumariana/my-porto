@@ -18,13 +18,15 @@ export function renderProjectCard(project) {
   ].filter(Boolean).join('');
 
   // Build phone frame content — show video element only if video path provided
+  const thumbImg = `<img src="${project.thumbnail}" alt="${project.title}" class="phone-media"
+       id="thumb-${project.id}"
+       onerror="this.style.display='none'">`;
+
   const phoneContent = project.video
-    ? `
-        <img src="${project.thumbnail}" alt="${project.title}" class="phone-media" id="thumb-${project.id}">
-        <video src="${project.video}" class="phone-media" id="video-${project.id}"
-               muted loop playsinline style="display:none"></video>
-      `
-    : `<img src="${project.thumbnail}" alt="${project.title}" class="phone-media">`;
+    ? `${thumbImg}
+       <video src="${project.video}" class="phone-media" id="video-${project.id}"
+              muted loop playsinline style="display:none"></video>`
+    : thumbImg;
 
   return `
     <div class="project-card" data-id="${project.id}" data-has-video="${!!project.video}">
