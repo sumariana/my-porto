@@ -1,44 +1,63 @@
-/* Change any color here to retheme the entire site */
 :root {
-  --bg-primary:     #0f0f0f;
-  --bg-card:        #1a1a2a;
-  --bg-card-hover:  #1f1f35;
-  --accent:         #00d4ff;
-  --accent-dim:     rgba(0, 212, 255, 0.1);
-  --text-primary:   #e8e8f0;
-  --text-secondary: #a0a0b8;
-  --border:         #2a2a3e;
-  --font:           'Inter', sans-serif;
-  --phone-border:   #2a2a3e;
-  --phone-bg:       #000000;
-  --phone-inset:    #1a1a2a;
-  --btn-text:       #0f0f0f;
-  --badge-border:   rgba(0, 212, 255, 0.12);
-  --bg-navbar:      rgba(15, 15, 15, 0.9);
+  /* Example palette — onyx/gold */
+  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240,1%,25%) 3%, hsl(0,0%,19%) 97%);
+  --bg-gradient-jet:  linear-gradient(to bottom right, hsla(240,1%,18%,0.251) 0%, hsla(240,2%,11%,0) 100%), hsl(240,2%,13%);
+  --bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(45,100%,71%) 0%, hsla(36,100%,69%,0) 50%);
+  --bg-gradient-yellow-2: linear-gradient(135deg, hsla(45,100%,71%,0.251) 0%, hsla(35,100%,68%,0) 59.86%), hsl(240,2%,13%);
+  --border-gradient-onyx: linear-gradient(to bottom right, hsl(0,0%,25%) 0%, hsla(0,0%,25%,0) 50%);
+  --text-gradient-yellow: linear-gradient(to right, hsl(45,100%,72%), hsl(35,100%,68%));
+
+  --jet:                hsl(0, 0%, 22%);
+  --onyx:               hsl(240, 1%, 17%);
+  --eerie-black-1:      hsl(240, 2%, 13%);
+  --eerie-black-2:      hsl(240, 2%, 12%);
+  --smoky-black:        hsl(0, 0%, 7%);
+  --white-1:            hsl(0, 0%, 100%);
+  --white-2:            hsl(0, 0%, 98%);
+  --orange-yellow:      hsl(45, 100%, 72%);
+  --vegas-gold:         hsl(45, 54%, 58%);
+  --light-gray:         hsl(0, 0%, 84%);
+  --light-gray-70:      hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* Alias tokens — keep existing component CSS working unchanged */
+  --bg-primary:    var(--smoky-black);
+  --bg-card:       var(--eerie-black-1);
+  --bg-card-hover: var(--eerie-black-2);
+  --accent:        var(--orange-yellow);
+  --accent-dim:    hsla(45, 100%, 72%, 0.12);
+  --text-primary:  var(--white-1);
+  --text-secondary: var(--light-gray);
+  --border:        var(--jet);
+  --badge-border:  hsla(45, 100%, 72%, 0.15);
+  --btn-text:      hsl(0, 0%, 7%);
+  --bg-navbar:     hsla(0, 0%, 7%, 0.9);
+
+  /* Typography */
+  --ff-poppins: 'Poppins', sans-serif;
+  --font:       var(--ff-poppins);
+  --fs-1: 24px; --fs-2: 18px; --fs-3: 17px; --fs-4: 16px;
+  --fs-5: 15px; --fs-6: 14px; --fs-7: 13px; --fs-8: 11px;
+  --fw-300: 300; --fw-400: 400; --fw-500: 500; --fw-600: 600;
+
+  /* Shadows */
+  --shadow-1: -4px 8px 24px hsla(0,0%,0%,0.25);
+  --shadow-2:  0 16px 30px  hsla(0,0%,0%,0.25);
+  --shadow-3:  0 16px 40px  hsla(0,0%,0%,0.25);
+  --shadow-4:  0 25px 50px  hsla(0,0%,0%,0.15);
+  --shadow-5:  0 24px 80px  hsla(0,0%,0%,0.25);
+
+  /* Transitions */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.6;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font); background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+li { list-style: none; }
+button { font: inherit; background: none; border: none; cursor: pointer; }
+input, textarea { display: block; width: 100%; background: none; font: inherit; }
+::selection { background: var(--orange-yellow); color: var(--smoky-black); }
