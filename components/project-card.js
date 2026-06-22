@@ -40,7 +40,7 @@ export function renderProjectCard(project) {
         ${videoEl}
         ${overlay}
       </div>
-      <div class="card-info" style="padding: 1.25rem;">
+      <div class="card-info">
         <div class="card-header">
           <h3 class="card-title">${project.title}</h3>
           <span class="card-period">${project.period}</span>
