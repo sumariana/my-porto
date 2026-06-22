@@ -1,29 +1,29 @@
-import { renderNavbar, initNavbar }            from './components/navbar.js';
-import { renderHero }                          from './components/hero.js';
-import { renderExperience }                    from './components/experience.js';
-import { renderProjectsGrid, initProjectsGrid } from './components/projects-grid.js';
-import { renderSkills }                        from './components/skills.js';
+import { renderSidebar, initSidebar }     from './components/sidebar.js';
+import { renderNavbar, initNavbar }       from './components/navbar.js';
+import { renderAbout, initAbout }         from './components/about.js';
+import { renderResume }                   from './components/resume.js';
+import { renderPortfolio, initPortfolio } from './components/portfolio.js';
+import { renderBlog }                     from './components/blog.js';
+import { renderContact, initContact }     from './components/contact.js';
 
 const app = document.getElementById('app');
 
 app.innerHTML = `
-  ${renderNavbar()}
-  <main>
-    <section id="about">${renderHero()}</section>
-    <section id="experience">${renderExperience()}</section>
-    <section id="projects">${renderProjectsGrid()}</section>
-    <section id="skills">${renderSkills()}</section>
-  </main>
-  <footer>
-    <p>
-      <a href="mailto:sumarianakadek@gmail.com">sumarianakadek@gmail.com</a>
-      &nbsp;·&nbsp;
-      <a href="https://www.linkedin.com/in/sumariana-made-b3402b128" target="_blank">LinkedIn</a>
-      &nbsp;·&nbsp;
-      © 2026 I Gusti Made Sumariana
-    </p>
-  </footer>
+  <div class="layout">
+    ${renderSidebar()}
+    <div class="main-content">
+      ${renderNavbar()}
+      ${renderAbout()}
+      ${renderResume()}
+      ${renderPortfolio()}
+      ${renderBlog()}
+      ${renderContact()}
+    </div>
+  </div>
 `;
 
+initSidebar();
 initNavbar();
-initProjectsGrid();
+initAbout();
+initPortfolio();
+initContact();
