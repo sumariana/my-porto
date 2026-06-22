@@ -37,7 +37,7 @@ export function renderSidebar() {
             </div>
             <div class="contact-info">
               <p class="contact-label">Birthday</p>
-              <time datetime="1996-06-02">June 2, 1996</time>
+              <time datetime="1996-06-02">May 22, 1998</time>
             </div>
           </li>
 

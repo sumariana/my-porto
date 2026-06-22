@@ -1,8 +1,8 @@
 const education = [
   {
-    school: 'Universitas Udayana',
-    degree: 'Bachelor of Information Technology',
-    period: '2014 — 2018',
+    school: 'Universitas Atma Jaya YogyaKarta',
+    degree: 'Bachelor of Computer Science',
+    period: '2016 — 2020',
     note: 'Studied computer science fundamentals, software engineering, and database systems.',
   },
 ];
@@ -25,12 +25,12 @@ const experience = [
 
 const skills = [
   { name: 'Flutter',                    level: 95 },
-  { name: 'React Native',               level: 85 },
-  { name: 'Kotlin / Swift',             level: 75 },
+  { name: 'React Native',               level: 95 },
+  { name: 'Kotlin / Swift',             level: 80 },
   { name: 'TypeScript / JavaScript',    level: 80 },
-  { name: 'Firebase',                   level: 80 },
-  { name: 'BLE / WebSocket / IoT',      level: 70 },
-  { name: 'Git & CI/CD',                level: 85 },
+  { name: 'Firebase',                   level: 90 },
+  { name: 'BLE / WebSocket / IoT',      level: 85 },
+  { name: 'Git & CI/CD',                level: 75 },
 ];
 
 export function renderResume() {
