@@ -16,8 +16,6 @@ export function renderHero() {
            target="_blank" class="contact-link">LinkedIn</a>
         <a href="mailto:sumarianakadek@gmail.com"
            class="contact-link">Email</a>
-        <a href="tel:+6285156287302"
-           class="contact-link">+62 851 5628 7302</a>
       </div>
     </div>
   `;
