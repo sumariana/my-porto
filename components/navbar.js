@@ -3,9 +3,10 @@ export function renderNavbar() {
     <nav class="navbar">
       <span class="navbar-brand">IGM Sumariana</span>
       <ul class="navbar-links">
-        <li><a href="#about"    class="nav-link active">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#about"      class="nav-link active">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
       </ul>
     </nav>
   `;

@@ -1,5 +1,6 @@
 import { renderNavbar, initNavbar }            from './components/navbar.js';
 import { renderHero }                          from './components/hero.js';
+import { renderExperience }                    from './components/experience.js';
 import { renderProjectsGrid, initProjectsGrid } from './components/projects-grid.js';
 import { renderSkills }                        from './components/skills.js';
 
@@ -9,6 +10,7 @@ app.innerHTML = `
   ${renderNavbar()}
   <main>
     <section id="about">${renderHero()}</section>
+    <section id="experience">${renderExperience()}</section>
     <section id="projects">${renderProjectsGrid()}</section>
     <section id="skills">${renderSkills()}</section>
   </main>

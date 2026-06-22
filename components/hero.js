@@ -17,6 +17,13 @@ export function renderHero() {
         <a href="mailto:sumarianakadek@gmail.com"
            class="contact-link">Email</a>
       </div>
+      <p class="hero-summary">
+        I'm a Mobile Engineer with over 6 years of industry experience, specializing in both
+        development and design of mobile applications. Beyond writing code, I architect specs,
+        APIs, and ensure seamless app performance. With expertise in React Native &amp; Flutter,
+        I build scalable, high-quality apps that enhance user experiences. I thrive in
+        problem-solving and collaborating with teams to turn ideas into great products.
+      </p>
     </div>
   `;
 }
