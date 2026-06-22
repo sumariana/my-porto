@@ -1,7 +1,7 @@
 export function renderNavbar() {
   return `
     <nav class="navbar">
-      <span class="navbar-brand">IGM Sumariana</span>
+      <span class="navbar-brand">Sumariana</span>
       <ul class="navbar-links">
         <li><a href="#about"      class="nav-link active">About</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
