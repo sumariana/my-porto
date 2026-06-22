@@ -52,7 +52,7 @@ export const projects = [
   },
   {
     id: "project-ai-1",
-    published: false, // set true when content is ready
+    published: true, // set true when content is ready
     title: "AI Project Title",
     subtitle: "Agentic AI · Web",
     period: "2025",
@@ -67,7 +67,37 @@ export const projects = [
   },
   {
     id: "project-web-1",
-    published: false, // set true when content is ready
+    published: true, // set true when content is ready
+    title: "Fullstack Project Title",
+    subtitle: "Web App",
+    period: "2025",
+    tech: ["React", "Node.js", "PostgreSQL"],
+    description: "Brief description of the fullstack project. Replace this with the real description before publishing.",
+    thumbnail: "assets/project-web-1/thumbnail.jpg",
+    video: null,
+    appStoreUrl: null,
+    designUrl: null,
+    playStoreUrl: null,
+    liveUrl: "https://your-live-url-here.com",
+  },
+  {
+    id: "project-web-2",
+    published: true, // set true when content is ready
+    title: "Fullstack Project Title",
+    subtitle: "Web App",
+    period: "2025",
+    tech: ["React", "Node.js", "PostgreSQL"],
+    description: "Brief description of the fullstack project. Replace this with the real description before publishing.",
+    thumbnail: "assets/project-web-1/thumbnail.jpg",
+    video: null,
+    appStoreUrl: null,
+    designUrl: null,
+    playStoreUrl: null,
+    liveUrl: "https://your-live-url-here.com",
+  },
+   {
+    id: "project-web-3",
+    published: true, // set true when content is ready
     title: "Fullstack Project Title",
     subtitle: "Web App",
     period: "2025",
