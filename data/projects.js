@@ -43,7 +43,7 @@ export const projects = [
     published: true,
     title: "Customa Manga Cafe",
     subtitle: "React Native (TypeScript) App",
-    period: "May 2025 – Oct 2025",
+    period: "May 2025 – present",
     tech: ["React Native", "SNS Login", "Google Maps API"],
     description: "Japanese manga cafe booking app with multi-tier membership, QR/barcode scanning, SNS login (Google, Apple, LINE), and Google Maps store locator.",
     description_points: [
@@ -52,6 +52,7 @@ export const projects = [
       "SNS login integrations: Google, Apple, LINE, Yahoo, Twitter, Facebook",
       "Google Maps API integration for store locator with favorite stores support",
       "Maintained in-app notifications, news feed, and overall app stability",
+      "Implemented a new Pre-booking system feature for non member users."
     ],
     thumbnail: "assets/customa/thumb.png",
     type: "mobile",
@@ -74,7 +75,7 @@ export const projects = [
     published: true,
     title: "Zensate",
     subtitle: "Flutter BLE + IoT Wellness App",
-    period: "Mar 2026 – Present",
+    period: "Feb 2026 – Present",
     tech: ["Flutter", "BLE", "WebSocket", "IoT"],
     description: "Wellness app connecting to a MUSE headband via Bluetooth for real-time brainwave monitoring and guided group relaxation sessions with IoT bed controls.",
     description_points: [
