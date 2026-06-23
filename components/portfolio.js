@@ -18,6 +18,7 @@ export function renderPortfolio() {
             <h3 class="project-modal-title" data-project-modal-title></h3>
             <p class="project-modal-meta" data-project-modal-meta></p>
             <div class="project-modal-badges" data-project-modal-badges></div>
+            <span class="project-modal-period" data-project-modal-period></span>
             <p class="project-modal-desc" data-project-modal-desc></p>
             <ul class="project-modal-points" data-project-modal-points></ul>
             <div class="project-modal-links" data-project-modal-links></div>
@@ -38,6 +39,7 @@ export function initPortfolio() {
   const titleEl   = document.querySelector('[data-project-modal-title]');
   const metaEl    = document.querySelector('[data-project-modal-meta]');
   const badgesEl  = document.querySelector('[data-project-modal-badges]');
+  const periodEl  = document.querySelector('[data-project-modal-period]');
   const descEl    = document.querySelector('[data-project-modal-desc]');
   const pointsEl  = document.querySelector('[data-project-modal-points]');
   const linksEl   = document.querySelector('[data-project-modal-links]');
@@ -62,8 +64,9 @@ export function initPortfolio() {
     mediaEl.innerHTML = mediaHTML;
 
     titleEl.textContent = project.title;
-    metaEl.textContent  = `${project.subtitle} · ${project.period}`;
+    metaEl.textContent  = project.subtitle;
     badgesEl.innerHTML  = project.tech.map(t => `<span class="badge">${t}</span>`).join('');
+    periodEl.textContent = project.period;
     descEl.textContent  = project.description;
 
     const points = project.description_points || [];

@@ -22,12 +22,10 @@ export function renderProjectCard(project) {
         </div>
       </div>
       <div class="card-info">
-        <div class="card-header">
-          <h3 class="card-title">${project.title}</h3>
-          <span class="card-period">${project.period}</span>
-        </div>
+        <h3 class="card-title">${project.title}</h3>
         <p class="card-subtitle">${project.subtitle}</p>
         <div class="card-badges">${badges}</div>
+        <span class="card-period">${project.period}</span>
         <p class="card-desc">${project.description}</p>
       </div>
     </div>
