@@ -1,5 +1,8 @@
 export function renderProjectCard(project) {
-  const badges = project.tech.map(t => `<span class="badge">${t}</span>`).join('');
+  const visibleTech = project.tech.slice(0, 2);
+  const remaining = project.tech.length - 2;
+  const badges = visibleTech.map(t => `<span class="badge">${t}</span>`).join('')
+    + (remaining > 0 ? `<span class="badge badge-more">+${remaining}</span>` : '');
 
   const bannerImg = `<img src="${project.thumbnail}" alt="${project.title}"
     class="card-banner-img" id="thumb-${project.id}"

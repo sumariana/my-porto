@@ -11,7 +11,7 @@ const experience = [
   {
     role: 'Mobile Developer',
     company: 'PT. Timedoor Indonesia — Denpasar, Bali',
-    period: 'Aug 2020 – Present',
+    period: 'Dec 2019 – Present',
     points: [
       'Lead mobile development using Flutter, building scalable apps across iOS & Android.',
       'Experienced with React Native (TypeScript), applying clean architecture principles.',
