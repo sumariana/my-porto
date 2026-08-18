@@ -1,13 +1,13 @@
 const posts = [
-  // {
-  //   title: 'Article Title — fill in from company blog',
-  //   category: 'Mobile Development',
-  //   date: '2025-01-01',
-  //   dateLabel: 'Jan 1, 2025',
-  //   excerpt: 'Short excerpt or summary of the article goes here.',
-  //   url: '#',
-  //   thumbnail: null,
-  // },
+  {
+    title: 'Monetizing React Native App: A Beginner’s Guide to Implementing In-App Purchases',
+    category: 'Mobile Development',
+    date: '2024-03-30',
+    dateLabel: 'Mar 30, 2024',
+    excerpt: 'In-app purchase is a feature provided by a platform to buy digital items or services directly from the mobile app',
+    url: 'https://timedoor.net/blogs/Monetizing-React-Native-App-A-Beginners-Guide-to-Implementing-In-App-Purchases/',
+    thumbnail: null,
+  },
   // {
   //   title: 'Article Title — fill in from company blog',
   //   category: 'Flutter',
