@@ -6,7 +6,7 @@ const posts = [
     dateLabel: 'Mar 30, 2024',
     excerpt: 'In-app purchase is a feature provided by a platform to buy digital items or services directly from the mobile app',
     url: 'https://timedoor.net/blogs/Monetizing-React-Native-App-A-Beginners-Guide-to-Implementing-In-App-Purchases/',
-    thumbnail: null,
+    thumbnail: 'assets/blog/thumb1.png',
   },
   // {
   //   title: 'Article Title — fill in from company blog',
