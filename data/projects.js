@@ -517,7 +517,7 @@ export const projects = [
     published: true,
     title: "Spin Win Bali",
     subtitle: "Agentic AI · Web App · Flutter",
-    period: "2026",
+    period: "Jul 2026 - present",
     tech: ["Anthropic API", "Flutter", "Next.js"],
     description: "SpinWin is a gamified giveaway voucher platform. Customers spin a wheel in a mobile app to win vouchers redeemable at partner vendor locations. Admins configure campaigns and a single win-rate percentage. vendors accept or reject redemptions in person via a QR-driven landing page",
     description_points: [],
