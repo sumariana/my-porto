@@ -521,7 +521,7 @@ export const projects = [
     tech: ["Anthropic API", "Flutter", "Next.js"],
     description: "SpinWin is a gamified giveaway voucher platform. Customers spin a wheel in a mobile app to win vouchers redeemable at partner vendor locations. Admins configure campaigns and a single win-rate percentage. vendors accept or reject redemptions in person via a QR-driven landing page",
     description_points: [],
-    thumbnail: "assets/spinwin/thumb.jpg",
+    thumbnail: "assets/spinwin/thumb.png",
     type: "mobile",
     video: null,
     screenshots: [
