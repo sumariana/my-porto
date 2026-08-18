@@ -362,7 +362,7 @@ export const projects = [
   },
   {
     id: "mahaputra-customer",
-    published: true,
+    published: false,
     title: "Mahaputra Customer",
     subtitle: "",
     period: "",
@@ -391,7 +391,7 @@ export const projects = [
   },
   {
     id: "mahaputra-seller",
-    published: true,
+    published: false,
     title: "Mahaputra Merchant",
     subtitle: "",
     period: "",
@@ -428,7 +428,7 @@ export const projects = [
   },
   {
     id: "otomedia",
-    published: true,
+    published: false,
     title: "Otomedia",
     subtitle: "",
     period: "",
@@ -455,7 +455,7 @@ export const projects = [
   },
   {
     id: "sewa",
-    published: true,
+    published: false,
     title: "Sewa App",
     subtitle: "",
     period: "",
@@ -487,7 +487,7 @@ export const projects = [
   },
   {
     id: "waterbom",
-    published: true,
+    published: false,
     title: "Waterbom",
     subtitle: "",
     period: "",
@@ -521,10 +521,16 @@ export const projects = [
     tech: ["Anthropic API", "Flutter", "Next.js"],
     description: "SpinWin is a gamified giveaway voucher platform. Customers spin a wheel in a mobile app to win vouchers redeemable at partner vendor locations. Admins configure campaigns and a single win-rate percentage. vendors accept or reject redemptions in person via a QR-driven landing page",
     description_points: [],
-    thumbnail: "assets/spinwin/thumbnail.jpg",
+    thumbnail: "assets/spinwin/thumb.jpg",
     type: "mobile",
     video: null,
-    screenshots: [],
+    screenshots: [
+      "assets/spinwin/1.png",
+      "assets/spinwin/2.png",
+      "assets/spinwin/3.png",
+      "assets/spinwin/4.png",
+      "assets/spinwin/5.png",
+    ],
     appStoreUrl: null,
     designUrl: null,
     playStoreUrl: null,

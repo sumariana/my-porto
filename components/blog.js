@@ -1,22 +1,22 @@
 const posts = [
-  {
-    title: 'Article Title — fill in from company blog',
-    category: 'Mobile Development',
-    date: '2025-01-01',
-    dateLabel: 'Jan 1, 2025',
-    excerpt: 'Short excerpt or summary of the article goes here.',
-    url: '#',
-    thumbnail: null,
-  },
-  {
-    title: 'Article Title — fill in from company blog',
-    category: 'Flutter',
-    date: '2025-01-01',
-    dateLabel: 'Jan 1, 2025',
-    excerpt: 'Short excerpt or summary of the article goes here.',
-    url: '#',
-    thumbnail: null,
-  },
+  // {
+  //   title: 'Article Title — fill in from company blog',
+  //   category: 'Mobile Development',
+  //   date: '2025-01-01',
+  //   dateLabel: 'Jan 1, 2025',
+  //   excerpt: 'Short excerpt or summary of the article goes here.',
+  //   url: '#',
+  //   thumbnail: null,
+  // },
+  // {
+  //   title: 'Article Title — fill in from company blog',
+  //   category: 'Flutter',
+  //   date: '2025-01-01',
+  //   dateLabel: 'Jan 1, 2025',
+  //   excerpt: 'Short excerpt or summary of the article goes here.',
+  //   url: '#',
+  //   thumbnail: null,
+  // },
 ];
 
 export function renderBlog() {
